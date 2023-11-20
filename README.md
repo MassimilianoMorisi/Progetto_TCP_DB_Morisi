@@ -114,7 +114,7 @@ Il codice è diviso in varie parti:
 
 - L'input dei client viene controllato per evitare attacchi di tipo SQL Injection.
 
-- Se si riscontrano problemi con l'avvio degli script, utilizzare python3 (comando: python3 <script>.py --> sostiture <script> con il nome del file) e controllare il PATH.
+- Se si riscontrano problemi con l'avvio degli script, è consigliabile utilizzare python3 con il comando seguente: python3 <script>.py (sostituire <script> con il nome del file). Verificare anche il PATH per assicurarsi che sia configurato correttamente.
 
 ## Autori
 
