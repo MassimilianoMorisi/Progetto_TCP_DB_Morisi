@@ -100,9 +100,9 @@ Il codice è diviso in varie parti:
 
 ## Avvertenze
 
-- L'avvio del server richiede qualche minuto.
+- Le operazioni di inizializzazione eseguite all'avvio del server richiedono qualche minuto.
 
-- Quando il server viene avviato, vengono create il database e le tabelle su cui lavorare e vengono inseriti alcuni record in esse.
+- Quando il server viene avviato, vengono create il database e le tabelle su cui lavorare e vengono inseriti alcuni record in esse (controllare se il DBMS è attivo e in ascolto).
 
 - All'avvio, se il database e la tabelle del server sono già presenti, il DBMS gestirà le queries e quindi non verranno creati record o tabelle duplicati.
 
@@ -110,7 +110,7 @@ Il codice è diviso in varie parti:
 
 - Fare attenzione a non eseguire operazioni di eliminazione del database (`__eliminaDatabase`) a meno che non sia necessario.
 
-- Verificare attentamente le credenziali del database e l'accesso al server per garantire un corretto funzionamento.
+- Verificare attentamente le credenziali del database e l'accesso al server per garantire un corretto funzionamento.- 
 
 - La gestione delle eccezioni permette l'esecuzione degli statement anche se vengono generati errori, ma vengono segnalati in modo opportuno.
 
