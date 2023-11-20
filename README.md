@@ -102,7 +102,9 @@ Il codice è diviso in varie parti:
 
 - Le operazioni di inizializzazione eseguite all'avvio del server richiedono qualche minuto.
 
-- Quando il server viene avviato, vengono create il database e le tabelle su cui lavorare e vengono inseriti alcuni record in esse (controllare se il DBMS è attivo e in ascolto).
+- Quando il server viene avviato, assicurarsi che il DBMS sia attivo e sia in ascolto.
+
+- Quando il server viene avviato, vengono create il database e le tabelle su cui lavorare e vengono inseriti alcuni record in esse.
 
 - All'avvio, se il database e la tabelle del server sono già presenti, il DBMS gestirà le queries e quindi non verranno creati record o tabelle duplicati.
 
