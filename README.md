@@ -60,7 +60,7 @@ Il codice è diviso in varie parti:
 
 4. Utilizzare le connessioni già configurate (per l'accesso al DBMS locale o al DBMS all'indirizzo 10.10.0.10) oppure configurare le credenziali del database nel file `Server_Acceso_Database_Morisi.py`:
     - `utenteDatabase` e `passwordDatabase` per l'accesso al database MySQL.
-    - `utenteServer` e `passwordServer` per l'autenticazione dei client sul server.
+    - `utenteServer` e `passwordServer` per l'autenticazione dei client sul server (credenziali server predefinite: utenteServer='user' passwordServer='root').
 
 5. Eseguire il file `Server_Acceso_Database_Morisi.py`:
 
