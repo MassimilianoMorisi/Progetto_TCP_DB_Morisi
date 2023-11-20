@@ -112,6 +112,10 @@ Il codice è diviso in varie parti:
 
 - La gestione delle eccezioni permette l'esecuzione degli statement anche se vengono generati errori, ma vengono segnalati in modo opportuno.
 
+- L'input dei client viene controllato per evitare attacchi di tipo SQL Injection.
+
+- Se si riscontrano problemi con l'avvio degli script, utilizzare python3 (comando: python3 <script>.py --> sostiture <script> con il nome del file) e controllare il PATH
+
 ## Autori
 
 Codice creato da Massimiliano Morisi, 5ªA Informatica.
