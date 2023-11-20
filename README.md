@@ -100,6 +100,8 @@ Il codice è diviso in varie parti:
 
 ## Avvertenze
 
+- L'avvio del server richiede qualche minuto.
+
 - Quando il server viene avviato, vengono create il database e le tabelle su cui lavorare e vengono inseriti alcuni record in esse.
 
 - All'avvio, se il database e la tabelle del server sono già presenti, il DBMS gestirà le queries e quindi non verranno creati record o tabelle duplicati.
