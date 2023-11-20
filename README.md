@@ -102,7 +102,7 @@ Il codice è diviso in varie parti:
 
 - Le operazioni di inizializzazione eseguite all'avvio del server richiedono qualche minuto.
   
-- Quando vengono eseguite le operazioni di inizializzazione del server, vengono generate eccezioni, che sono gestite, perché viene rilevato automaticamente se il DBMS a cui ci si connette è locale o no. Questo non altera il corretto funzionamento del server.
+- Quando vengono eseguite le operazioni di inizializzazione del server vengono generate eccezioni, che sono gestite, perché viene rilevato automaticamente se il DBMS a cui ci si connette è locale o no. Questo non altera il corretto funzionamento del server.
 
 - Quando il server viene avviato, assicurarsi che il DBMS sia attivo e sia in ascolto.
 
