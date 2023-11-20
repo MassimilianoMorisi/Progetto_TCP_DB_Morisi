@@ -114,7 +114,7 @@ Il codice è diviso in varie parti:
 
 - Verificare attentamente le credenziali del database e l'accesso al server per garantire un corretto funzionamento.
 
-- La gestione delle eccezioni permette l'esecuzione degli statement anche se vengono generati errori, ma vengono segnalati in modo opportuno.
+- La gestione delle eccezioni permette l'esecuzione degli statement anche se vengono generati errori ma vengono segnalati in modo opportuno.
 
 - L'input dei client viene controllato per evitare attacchi di tipo SQL Injection.
 
