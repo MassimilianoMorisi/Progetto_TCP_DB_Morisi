@@ -58,7 +58,7 @@ Il codice è diviso in varie parti:
     cd Progetto_TCP_DB_Morisi
     ```
 
-4. Configurare le credenziali del database nel file `Server_Acceso_Database_Morisi.py`:
+4. Utilizzare le connessioni già configurate (per l'accesso al DBMS locale o all'indirizzo 10.10.0.10) oppure configurare le credenziali del database nel file `Server_Acceso_Database_Morisi.py`:
     - `utenteDatabase` e `passwordDatabase` per l'accesso al database MySQL.
     - `utenteServer` e `passwordServer` per l'autenticazione dei client sul server.
 
@@ -100,7 +100,7 @@ Il codice è diviso in varie parti:
 
 ## Avvertenze
 
-- Quando il server viene avviato, viene creato il database e le tabelle su cui lavorare e vengono inseriti alcuni record in esse.
+- Quando il server viene avviato, vengono create il database e le tabelle su cui lavorare e vengono inseriti alcuni record in esse.
 
 - All'avvio, se il database e la tabelle del server sono già presenti, il DBMS gestirà le queries e quindi non verranno creati record o tabelle duplicati.
 
