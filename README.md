@@ -101,14 +101,14 @@ Il codice è diviso in varie parti:
 ## Avvertenze
 
 - Le operazioni di inizializzazione eseguite all'avvio del server richiedono qualche minuto.
+  
+- Quando vengono eseguite le operazioni di inizializzazione del server, vengono generate eccezioni, che sono gestite, perché viene rilevato automaticamente se il DBMS a cui ci si connette è locale o no. Questo non altera il corretto funzionamento del server.
 
 - Quando il server viene avviato, assicurarsi che il DBMS sia attivo e sia in ascolto.
 
 - Quando il server viene avviato, vengono creati il database e le tabelle su cui lavorare e vengono inseriti alcuni record in esse.
 
 - All'avvio, se il database e la tabelle del server sono già presenti, il DBMS gestirà le queries e quindi non verranno creati record o tabelle duplicati.
-
-- Quando vengono eseguite le operazioni di inizializzazione del server, vengono generate eccezioni, che sono gestite, perché viene rilevato automaticamente se il DBMS a cui ci si connette è locale o no. Questo non altera il corretto funzionamento del server.
 
 - Fare attenzione a non eseguire operazioni di eliminazione del database (`__eliminaDatabase`) a meno che non sia necessario.
 
