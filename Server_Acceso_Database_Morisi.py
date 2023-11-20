@@ -72,7 +72,7 @@ class Server_Accesso_Database:
         #implemento solo l'eliminazione del database sull'host locale per evitare di eliminare il database condiviso
         #se si vuole fare ciò, basterà richiamare la funzione self.__getConnection con i parametri adeguati
         query = r"DROP DATABASE " + database + r";"
-        connessione_DB = self.__getConnection(host="localhost", port=3308, utente="user", password="user")
+        connessione_DB = self.__getConnection(host="localhost", port=3306, utente="user", password="user")
         try:
             cur = connessione_DB.cursor()
             cur.execute(query)
@@ -83,7 +83,7 @@ class Server_Accesso_Database:
 
     def __creazioneTabelleDipendenti(self, database : str, databaseSchema : str = None) -> None:
         if(databaseSchema == None): 
-            connessione_DB = self.__getConnection(host="localhost", port=3308, utente="user", password="user")
+            connessione_DB = self.__getConnection(host="localhost", port=3306, utente="user", password="user")
 
         else:
             connessione_DB = self.__getConnection(utente='massimiliano_morisi', password='morisi1234', database=databaseSchema)
@@ -119,7 +119,7 @@ class Server_Accesso_Database:
     def __creazioneZoneLavoro(self, database : str, databaseSchema : str = None) -> None:
         if(databaseSchema == None): 
             
-            connessione_DB = self.__getConnection(host="localhost", port=3308, utente="user", password="user")
+            connessione_DB = self.__getConnection(host="localhost", port=3306, utente="user", password="user")
 
         else:
             connessione_DB = self.__getConnection(utente='massimiliano_morisi', password='morisi1234', database=databaseSchema)
@@ -157,7 +157,7 @@ class Server_Accesso_Database:
         #creazione del database
         if(databaseCreare == self.NomeDatabaseBase): 
             
-            connessione_DB = self.__getConnection(host="localhost", port=3308, utente="user", password="user")
+            connessione_DB = self.__getConnection(host="localhost", port=3306, utente="user", password="user")
 
         else:
             connessione_DB = self.__getConnection(utente='massimiliano_morisi', password='morisi1234', database=databaseSchema)
@@ -184,7 +184,7 @@ class Server_Accesso_Database:
         if(doveAccedere == "10.10.0.10"):    # per server at 10.10.0.10
             connessione_DB = self.__getConnection(utente='massimiliano_morisi', password='morisi1234')
         else:
-            connessione_DB = self.__getConnection(host="localhost", port=3308, utente="user", password="user", database=self.NomeDatabaseBase) #3308 perché ho cambiato, sul mio device, la porta del server MySQL con hosting da XAMPP
+            connessione_DB = self.__getConnection(host="localhost", port=3306, utente="user", password="user", database=self.NomeDatabaseBase)
         
         continuaInsert = True
         while(continuaInsert):
@@ -265,7 +265,7 @@ class Server_Accesso_Database:
         if(doveAccedere == "10.10.0.10"):
             connessione_DB = self.__getConnection(utente='massimiliano_morisi', password='morisi1234')
         else:
-            connessione_DB = self.__getConnection(host="localhost", port=3308, utente="user", password="user", database=self.NomeDatabaseBase)
+            connessione_DB = self.__getConnection(host="localhost", port=3306, utente="user", password="user", database=self.NomeDatabaseBase)
 
         if(self.__controllaSQL_Injection(tabella)):
             self.connessioniSocketClient[numeroConnessione].send("Operazione potenzialmente malevola non permessa - NO SQL Injection - Chiusura Connessione".encode())
@@ -308,7 +308,7 @@ class Server_Accesso_Database:
         if(doveAccedere == "10.10.0.10"):
             connessione_DB = self.__getConnection(utente='massimiliano_morisi', password='morisi1234')
         else:
-            connessione_DB = self.__getConnection(host="localhost", port=3308, utente="user", password="user", database=self.NomeDatabaseBase)
+            connessione_DB = self.__getConnection(host="localhost", port=3306, utente="user", password="user", database=self.NomeDatabaseBase)
 
         continuaUpdate = True
         connesioneGiaInstanzianta = 0
@@ -389,7 +389,7 @@ class Server_Accesso_Database:
         if(doveAccedere == "10.10.0.10"):
             connessione_DB = self.__getConnection(utente='massimiliano_morisi', password='morisi1234')
         else:
-            connessione_DB = self.__getConnection(host="localhost", port=3308, utente="user", password="user", database=self.NomeDatabaseBase)
+            connessione_DB = self.__getConnection(host="localhost", port=3306, utente="user", password="user", database=self.NomeDatabaseBase)
 
         continuaDelete = True
         connesioneGiaInstanzianta = 0
