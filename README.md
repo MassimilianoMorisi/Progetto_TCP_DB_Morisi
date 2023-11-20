@@ -25,7 +25,7 @@ Il codice è diviso in varie parti:
 
 - Python 3.x
 - Librerie Python: `mysql-connector-python`, `tabulate`
-- Applicazione per hosting DBMS MySQL (consiglio di creare un utente sul DBMS locale con nome utente 'user' e password 'user' per evitare di cambiare dati nel codice del server)
+- Applicazione per hosting DBMS MySQL (è consigliato creare un utente sul DBMS locale con nome utente 'user' e password 'user' per evitare di cambiare dati nel codice del server)
 
 ## Installazione tramite git clone
 
