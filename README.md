@@ -112,7 +112,7 @@ Il codice è diviso in varie parti:
 
 - Fare attenzione a non eseguire operazioni di eliminazione del database (`__eliminaDatabase`) a meno che non sia necessario.
 
-- Verificare attentamente le credenziali del database e l'accesso al server per garantire un corretto funzionamento.- 
+- Verificare attentamente le credenziali del database e l'accesso al server per garantire un corretto funzionamento.
 
 - La gestione delle eccezioni permette l'esecuzione degli statement anche se vengono generati errori, ma vengono segnalati in modo opportuno.
 
