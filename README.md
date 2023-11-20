@@ -25,7 +25,7 @@ Il codice è diviso in varie parti:
 
 - Python 3.x
 - Librerie Python: `mysql-connector-python`, `tabulate`
-- Applicazione per hosting DBMS MySQL (consiglio di creare un utente sul DBMS locale con nome utente 'user' e password 'user' per evitare di cambiare parametri delle funzioni nel codice)
+- Applicazione per hosting DBMS MySQL (consiglio di creare un utente sul DBMS locale con nome utente 'user' e password 'user' per evitare di cambiare dati nel codice del server)
 
 ## Installazione tramite git clone
 
@@ -108,7 +108,7 @@ Il codice è diviso in varie parti:
 
 - Fare attenzione a non eseguire operazioni di eliminazione del database (`__eliminaDatabase`) a meno che non sia necessario.
 
-- Verificare attentamente le credenziali del database e l'accesso al server per garantire un corretto funzionamento (consiglio di creare un utente sul DBMS locale con nome utente 'user' e password 'user' per evitare di cambiare parametri delle funzioni nel codice).
+- Verificare attentamente le credenziali del database e l'accesso al server per garantire un corretto funzionamento.
 
 - La gestione delle eccezioni permette l'esecuzione degli statement anche se vengono generati errori, ma vengono segnalati in modo opportuno.
 
